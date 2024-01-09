@@ -32,7 +32,7 @@ class _ShopPageState extends State<ShopPage> {
         padding: const EdgeInsets.all(25.0),
         child: Column(
           children: [
-            const Text("How would you like your coffee?",
+            const Text("Order your Favourite!",
               style: TextStyle(fontSize: 20),
             ),
 
