@@ -11,18 +11,24 @@ class CoffeeShop extends ChangeNotifier{
       imagePath: "lib/images/coffee1.png",
     ),
 
+    Coffee(
+      name: 'Sprice',
+      price: "4.10",
+      imagePath: "lib/images/coffee10.png",
+    ),
+
     //italy
     Coffee(
       name: 'makiyato',
       price: "4.10",
-      imagePath: "lib/images/coffee2.png",
+      imagePath: "lib/images/coffee9.png",
     ),
 
     //latte
     Coffee(
-      name: 'local buna',
+      name: 'Jebena buna',
       price: "4.10",
-      imagePath: "lib/images/coffee6.png",
+      imagePath: "lib/images/coffee8.png",
     ),
 
     //espresso
@@ -34,9 +40,15 @@ class CoffeeShop extends ChangeNotifier{
 
     //iced
     Coffee(
-      name: 'long black',
+      name: ' ye Machine Buna',
       price: "4.10",
       imagePath: "lib/images/coffee5.png",
+    ),
+
+    Coffee(
+      name: ' Buna be Sukar',
+      price: "4.10",
+      imagePath: "lib/images/coffee6.png",
     ),
 
   ];

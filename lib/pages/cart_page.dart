@@ -17,6 +17,10 @@ class _CartPageState extends State<CartPage> {
   void removeFromCart(Coffee coffee){
     Provider.of<CoffeeShop>(context, listen: false).removeItemFrontCart(coffee);
   }
+
+  void payNow(){
+
+  }
   
   @override
   Widget build(BuildContext context) {
@@ -41,7 +45,26 @@ class _CartPageState extends State<CartPage> {
                   );
                 },
                ),
-              )
+              ),
+              GestureDetector(
+                onTap: payNow,
+                child: Container(
+                  padding: const EdgeInsets.all(25),
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: Colors.brown,
+                      borderRadius: BorderRadius.circular(12)
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "Pay Now",
+                      style: TextStyle(
+                          color: Colors.white),
+                        ),
+                  ),
+
+                ),
+              ),
             ],
           ),
         ),
