@@ -1,9 +1,9 @@
 import 'package:buna_shop/components/coffee_tile.dart';
-import 'package:buna_shop/moduls/coffee_shop.dart';
+import 'package:buna_shop/models/coffee_shop.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../moduls/coffee.dart';
+import '../models/coffee.dart';
 
 class ShopPage extends StatefulWidget {
   const ShopPage({super.key});
@@ -13,6 +13,11 @@ class ShopPage extends StatefulWidget {
 }
 
 class _ShopPageState extends State<ShopPage> {
+
+  void addToCart(Coffee coffee){
+    Provider.of<CoffeeShop>(context, listen: false).addItemToCart(coffee);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Consumer<CoffeeShop>(builder: (context, value, child)=>SafeArea(
@@ -30,7 +35,11 @@ class _ShopPageState extends State<ShopPage> {
               itemBuilder: (context, index){
                   Coffee eachCoffee = value.coffeeShop[index];
 
-                  return CoffeeTile(coffee: eachCoffee);
+                  return CoffeeTile(
+                    coffee: eachCoffee,
+                    icon: Icon(Icons.add),
+                    onPressed: () => addToCart(eachCoffee),
+                  );
                  },
                ),
              ),

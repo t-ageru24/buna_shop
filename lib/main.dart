@@ -1,4 +1,4 @@
-import 'package:buna_shop/moduls/coffee_shop.dart';
+import 'package:buna_shop/models/coffee_shop.dart';
 import 'package:buna_shop/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
