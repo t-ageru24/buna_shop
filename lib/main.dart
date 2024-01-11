@@ -1,4 +1,5 @@
 import 'package:buna_shop/authenth/signUp_page.dart';
+import 'package:buna_shop/pages/welcome_page.dart';
 import 'package:buna_shop/models/coffee_shop.dart';
 import 'package:buna_shop/pages/home_page.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget{
       create: (context) => CoffeeShop(),
       builder: (context, child)=> const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: SignUpPage(),//Replace LoginPage() with  HomePage()
+        home: WelcomePage(),//Replace LoginPage() with  HomePage()
       ),
     );
   }

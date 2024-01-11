@@ -38,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
               // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Welcome!",
+                  "Hello!",
                   style: TextStyle(
                     fontSize: 50,
                     fontWeight: FontWeight.bold,

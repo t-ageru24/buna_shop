@@ -212,7 +212,7 @@ class SignUpPage extends StatelessWidget {
                         radius: 28,
                         backgroundImage: AssetImage(
                           "lib/images/"+images[index],
-                    
+
                         ),
                       ),
                     ),
