@@ -80,6 +80,11 @@ flutter:
       - lib/images/coffee9.png
       - lib/images/coffee10.png
       - lib/images/profile.png
+      - lib/images/apple0.png
+      - lib/images/apple2.png
+      - lib/images/google0.png
+      - lib/images/google1.png
+      - lib/images/google3.png
 
   #    - images/a_dot_ham.jpeg
 
