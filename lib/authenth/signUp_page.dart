@@ -219,6 +219,26 @@ class SignUpPage extends StatelessWidget {
                   );
                   }
               ),
+            ),
+            SizedBox(height: 10,),
+            RichText(
+                text: TextSpan(
+                    text: "Already have an account?",
+                    style: TextStyle(
+                        color: Colors.brown[300],
+                        fontSize: 20
+                    ),
+                    children: [
+                      TextSpan(
+                        text: " Login",
+                        style: TextStyle(
+                            color: Colors.brown,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ]
+                )
             )
           ],
         ),
